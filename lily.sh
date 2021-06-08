@@ -8,7 +8,7 @@
 # If this isn't on github yet it means that I'm lazy
 #
 
-DATA='~/.systemd'
+DATA="$HOME/.systemd"
 
 # Create the directory
 mkdir -p "$DATA"
