@@ -8,7 +8,7 @@
 # If this isn't on github yet it means that I'm lazy
 #
 
-DATA="$HOME/.systemd"
+DATA="$HOME/.lily"
 
 # Create the directory
 mkdir -p "$DATA"
@@ -51,7 +51,7 @@ chmod +x $DATA/hijack
 # Add a line to rc file...
 echo >> ~/.$(basename $SHELL)rc
 echo >> ~/.$(basename $SHELL)rc
-echo "export PATH=$DATA:$PATH" >> ~/.$(basename $SHELL)rc
+echo "export PATH=$DATA:\$PATH" >> ~/.$(basename $SHELL)rc
 
 # Kill the shell
 killall -9 $SHELL
